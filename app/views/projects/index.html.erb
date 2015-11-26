@@ -1,0 +1,14 @@
+<h1>Projects</h1>
+<p>Here are all the projects:</p>
+<table>
+	<tbody>
+		<tr>
+      <th>Project</th>
+      <th>Company</th>  
+    </tr>
+    <%= render partial: 'project', collection: @projects %>
+	</tbody>
+</table>
+<% content_for :aside do %>
+  <% render 'sidebar' %>
+<% end %>
